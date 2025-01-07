@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            /* height: 35px; */
+            padding: 20px;
+            align-items: center;
+        }
+        .nav{
+            width: 75%;
+            display: flex;
+            color: red;
+            text-align: center;
+            gap: 20px;
+            align-items: center;
+            justify-content: right;
+            /* position: relative;
+            left: 1200px;
+            bottom: 30px; */
+        }
+         .logo{
+            width: 25%;
+            color: red;
+         }
+         /* .menu{
+            display: none;
+         } */
+          .container{
+            display: flex;
+            justify-content: space-around;
+            width:100%;
+             align-items: center;
+             margin-left: auto;
+             margin-right: auto;
+          }
+        
+
+         @media (max-width:600px){
+            body{
+                background-color: aquamarine;
+            }
+         
+         .container{
+            display: grid;
+         }
+         .nav{
+            display: none;
+         }
+         }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">   
+            <p>Logo</p> </div>
+            <div class="nav">
+                <p><a href="" style="color: red;">Home</a></p>
+                <p><a href="" style="color: red;">About</a></p>
+                <p><a href="" style="color: red;">Contact</a></p>
+        
+        </div>
+        <!-- <button class="menu">menu</button> -->
+    </div>
+
+    <div class="container">
+       <div class="div1"><img src="/images/image.png" width="300px" height="200px"> </div>
+        <div class="div1"><img src="/images/image.png" width="300px" height="200px"> </div>
+        <div class="div1"><img src="/images/image.png" width="300px" height="200px">
+    </div>
+    </div>
+</body>
+</html>
+</body>
+</html>

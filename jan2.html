@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         let age=parseInt(prompt("Enter Your Age?"))
+// if(age>=18){
+//     alert("You are old enough to drive.");
+// }else{
+//     alert("You are left with 3 years to drive.");
+// }
+
+// let yourAge = prompt("Enter your age:");
+// yourAge = Number(yourAge);
+// const myAge = 25; 
+// if (yourAge > myAge) {
+//     console.log("You are older than me.");
+// } else if (yourAge < myAge) {
+//     console.log("I am older than you.");
+// } else {
+//     console.log("We are the same age.");
+// }
+
+
+
+// let month = prompt("Enter a month:").toLowerCase();
+// let days;
+
+// switch (month) {
+//     case 'january':
+//         days = 31;
+//         break;
+//     case 'february':
+//         days = 28;
+//         break;
+//     case 'march':
+//         days = 31;
+//         break;
+//     case 'april':
+//         days = 30;
+//         break;
+//     case 'may':
+//         days = 31;
+//         break;
+//     case 'june':
+//         days = 30;
+//         break;
+//     case 'july':
+//         days = 31;
+//         break;
+//     case 'august':
+//         days = 31;
+//         break;
+//     case 'september':
+//         days = 30;
+//         break;
+//     case 'october':
+//         days = 31;
+//         break;
+//     case 'november':
+//         days = 30;
+//         break;
+//     case 'december':
+//         days = 31;
+//         break;
+//     default:
+//         alert("Invalid month");
+//         days = null;
+// }
+
+// if (days !== null) {
+//     let formattedMonth = month[0].toUpperCase() + month.substring(1); 
+//     alert(formattedMonth + " has " + days + " days.");
+// }
+
+
+let month = prompt("Enter a month:").toLowerCase();
+let year = parseInt(prompt("Enter a year:"));
+let days;
+
+switch (month) {
+    case 'january':
+        days = 31;
+        break;
+    case 'february':
+       
+        if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+            days = 29; 
+        } else {
+            days = 28; 
+        }
+        break;
+    case 'march':
+        days = 31;
+        break;
+    case 'april':
+        days = 30;
+        break;
+    case 'may':
+        days = 31;
+        break;
+    case 'june':
+        days = 30;
+        break;
+    case 'july':
+        days = 31;
+        break;
+    case 'august':
+        days = 31;
+        break;
+    case 'september':
+        days = 30;
+        break;
+    case 'october':
+        days = 31;
+        break;
+    case 'november':
+        days = 30;
+        break;
+    case 'december':
+        days = 31;
+        break;
+    default:
+        alert("Invalid month");
+        days = null;
+}
+
+if (days !== null) {
+   
+    let formattedMonth = month[0].toUpperCase() + month.substring(1);
+    alert(formattedMonth + " has " + days + " days in the year " + year + ".");
+}
+
+
+
+
+
+    </script>
+</body>
+</html>

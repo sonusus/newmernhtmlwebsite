@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            /* height: 35px; */
+            padding: 20px;
+            align-items: center;
+        }
+        .nav{
+            width: 75%;
+            display: flex;
+            color: red;
+            text-align: center;
+            gap: 20px;
+            align-items: center;
+            justify-content: right;
+            /* position: relative;
+            left: 1200px;
+            bottom: 30px; */
+        }
+         .logo{
+            width: 25%;
+            color: red;
+         }
+         .menu{
+            display: none;
+         }
+         @media (max-width:600px){
+            body{
+                background-color: aquamarine;
+            }
+            .nav{
+                display:none;
+            }
+            .menu{
+            display: block;
+         }
+         }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">   
+            <p>Logo</p> </div>
+            <div class="nav">
+                <p><a href="" style="color: red;">Home</a></p>
+                <p><a href="" style="color: red;">About</a></p>
+                <p><a href="" style="color: red;">Contact</a></p>
+        
+        </div>
+        <button class="menu">menu</button>
+    </div>
+</body>
+</html>

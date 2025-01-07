@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+            /* box-sizing: border-box; */
+            /* margin: 0px; */
+    body{
+        overflow-y: auto;
+        overflow-x: hidden;
+        /* position: static; */
+       
+    }
+        
+        .header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(24, 5, 69);
+            /* height: 35px; */
+            /* padding: 20px; */
+            align-items: center;
+           
+        }
+        .nav{
+            width: 75%;
+            display: flex;
+            color:white;
+            text-align: center;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+           
+            /* position: relative;
+            left: 1200px;
+            bottom: 30px; */
+        }
+         .logo{
+            width: 25%;
+            display: flex;
+            justify-content:right;
+            align-items: center;
+         }
+         .logo img{
+            height: 50px; 
+            width: 300px;
+          
+         }
+         a{
+            text-decoration: none;
+         }
+         .wallpaper{
+            width: 100%;
+            height: 75%;
+            /* background-color: #555; */
+         }
+       .wallwrite{
+        color: rgb(48, 7, 92);
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 30px;
+        position: relative;
+        bottom: 600px;
+       }
+       .wallwrite2{
+        color: black;
+        font-weight: lighter;
+        font-size: 20px;
+       }
+        .wallpaper img{
+            margin: 0%;
+            width: 100%;
+            height: 700px;
+        }
+        .iso img{
+            width: 350px;
+            height: 200px;
+         
+        }
+        .iso{
+          position: relative;
+          bottom: 650px;
+          left: 160px;
+        }
+        .but{
+            width: 150px;
+            height: 50px;
+            /* padding: 25px; */
+            background-color: rgb(34, 55, 188);
+            color:white;
+            font-size: 15px;
+            /* border: solid blue; */
+            border-radius: 5px;
+            position: relative;
+            right: 400px;
+            text-align: center; 
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            top: 60px; 
+            border: none;
+        }
+        .but:hover{
+            transition: .5s linear;
+            scale: 1.1;
+            background-color: rgb(0, 247, 255);
+            color: aliceblue; 
+        }
+        .butt{
+            width: 200px;
+            height: 50px;
+            /* padding: 25px; */
+            background-color:rgb(0, 200, 255);
+            color:white;
+            font-size: 15px;
+            /* border: solid blue; */
+            border-radius: 5px;
+            position: relative;
+            right: 350px;
+            text-align: center; 
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            top: 60px; 
+            border: 5px;
+        }
+        .butt:hover{
+            transition: .5s linear;
+            scale: 1.1;
+            background-color: blue;
+            color: aliceblue; 
+        }
+        .youbut{
+            width: 150px;
+            height: 50px;
+            /* padding: 25px; */
+            background-color: rgb(34, 55, 188);
+            color:white;
+            font-size: 15px;
+            /* border: solid blue; */
+            border-radius: 5px;
+            position: relative;
+            /* right: 400px; */
+            text-align: center; 
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            top: 60px; 
+            border: none;
+            left: 50px;
+        }
+        .youbut:hover{
+            transition: .5s linear;
+            scale: 1.1;
+            background-color: white;
+            color:  rgb(0, 247, 255); 
+            border: solid  rgb(0, 247, 255);
+        }
+        .youbutt{
+            width: 200px;
+            height: 50px;
+            /* padding: 25px; */
+            background-color:white;
+            color:blue;
+            font-size: 15px;
+            border: solid blue;
+            /* border-right-color: blue; */
+            border-radius: 5px;
+            position: relative;
+            right: 350px;
+            text-align: center; 
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            top: 60px; 
+            left: 70px;
+            /* border: 5px; */
+        }
+        .youbutt:hover{
+            transition: .5s linear;
+            scale: 1.1;
+            background-color: blue;
+            color: aliceblue; 
+           
+        }
+        .youtube{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* background-color: #555; */
+        }
+        .you1{
+            position: relative;
+            bottom: 450px;
+            border: 5px solid blue;
+            border-radius: 20px;
+            overflow: hidden;
+            left: 100px;
+        }
+        .you2{
+            position: relative;
+            bottom: 496px;
+            font-size: 30px;
+            position: 180px;
+            font-weight: bold;
+        }
+        .you3{
+            font-weight: lighter;
+            font-size: 15px;
+            position: relative;
+            right: 90px;
+        }
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    /* margin: 50px; */
+    width: 80%;
+    /* max-width: 1200px; */
+   gap:10px;
+   position: relative;
+   right:40px;
+   margin-left: auto;
+   margin-right: auto;
+   /* background-color: #555; */
+}
+
+.box {
+    /* background-color: rgb(64, 59, 59); */
+    border: 1px solid blue;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgb(7, 7, 7);
+    width: 250px;
+    /* min-width: 300px; */
+    padding: 60px;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    height: 400px;
+    bottom: 400px;
+    left: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.box .p1{
+    position: relative;
+    bottom: 90px;
+}
+.box .p2{
+    position: relative;
+    bottom: 90px;
+}
+.box .p3{
+    position: relative;
+    bottom: 80px;
+}
+/* .p3:hover{
+            transition: .5s linear;
+            scale: 1.1;
+            background-color: white;
+            color:  rgb(0, 247, 255); 
+            border: solid  rgb(0, 247, 255);
+        } */
+.box h2 img {
+    position: relative;
+    bottom:  50px;
+   height: 180px;
+   width: 300px;
+}
+.box .h22 img {
+    position: relative;
+    bottom: 3px;
+   height: 80px;
+   width: 300px;
+}
+.box .h33 img {
+    position: relative;
+    bottom: 3px;
+   height: 70px;
+   width: 200px;
+}
+
+.box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.box p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.box button {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    /* cursor: pointer; */
+    font-size: 1rem;
+    /* transition: background-color 0.3s; */
+}
+
+.box button:hover {
+    /* background-color: blue; */
+          transition: .5s linear;
+            scale: 1.1;
+            background-color: white;
+            color:  rgb(0, 247, 255); 
+            border: solid  rgb(0, 247, 255);
+}
+     .hi{
+        width: 100%;
+        height: 500px;
+        background-color:whitesmoke;
+        position: relative;
+        bottom: 380px;
+       margin-left: auto;
+       margin-right: auto;
+     }
+    .hi1{ 
+        position: relative;
+        /* bottom: 380px; */
+        top: 100px;
+        left: 460px;
+        font-size: 40px;
+     
+    }
+    .react{
+        position: relative;
+        bottom: 310px;
+        color:black;
+        left: 30px;
+    }
+    .hi2{
+        position: relative;
+        /* bottom: 380px; */
+        top: 90px;
+        left: 360px; 
+        font-size: 20px;
+    }
+    .bu{
+        position: relative;
+        /* bottom: 380px; */
+        top: 90px;
+        left: 560px; 
+        width: 400px;
+        border-radius: 50px;
+        background: linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+    .hiii{
+      width: 80%;
+      display: flex;
+      position: relative;
+      bottom:290px;
+      left: 190px; 
+      gap: 50px;
+
+      /* background-color: #333; */
+    }
+    .hiii img{
+        width: 150px;
+        height: 100px;
+        position: relative;
+        bottom:300px ;
+    }
+    .phi{
+        width: 100%;
+        height: 500px;
+        background-color:whitesmoke;
+        position: relative;
+        bottom: 480px;
+       margin-left: auto;
+       margin-right: auto;
+     }
+    .phi1{ 
+        position: relative;
+        /* bottom: 380px; */
+        bottom: 100px;
+        left: 560px;
+        font-size: 40px;
+     
+    }
+    .phi2{
+        position: relative;
+        /* bottom: 380px; */
+        bottom: 100px;
+        left: 590px; 
+        font-size: 20px;
+    }
+    .pbu{
+        position: relative;
+        /* bottom: 380px; */
+        bottom: 100px;
+        left: 560px; 
+        width: 400px;
+        border-radius: 50px;
+        background: linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+    .phiii{
+      width: 100%;
+      display: flex;
+      position: relative;
+      bottom:890px;
+      left: 50px; 
+      gap: 80px;
+      justify-content: center;
+   
+    }
+    .phiii img{
+        width: 60px;
+        height: 60px;
+       position: relative;
+       left: 80px;
+       top: 10px;
+    }
+    .phii{
+        border: solid blue 2px;
+        border-radius: 26px;
+        width: 250px;
+        height: 250px;
+    }
+    .phii:hover{
+        border: solid rgb(0, 195, 255) 2px;
+        /* transition: .5s linear;
+        scale: 1.1; */
+    }
+    /* .wphii{
+        border: solid blue 2px;
+        border-radius: 26px;
+        width: 250px;
+        height: 250px;
+    } */
+    .wphi{
+        width: 100%;
+        height: 500px;
+        background-color:whitesmoke;
+        position: relative;
+        bottom: 880px;
+       
+     }
+    .wphi1{ 
+        position: relative;
+        /* bottom: 380px; */
+        top: 20px;
+        left: 530px;
+        font-size: 40px;
+     
+    }
+    .wphi2{
+        position: relative;
+        /* bottom: 380px; */
+        top: 30px;
+        left: 590px; 
+        font-size: 20px;
+    }
+    .wpbu{
+        position: relative;
+        /* bottom: 380px; */
+        top: 30px;
+        left: 560px; 
+        width: 400px;
+        border-radius: 50px;
+        background: linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+    .con{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            display: grid;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows:repeat(5,1fr);
+            height: 300px;
+           position: relative;
+           bottom: 1170px;
+        }
+        .div1{
+            background-color: green;
+            margin: 0px;
+            border: solid white;
+         
+        }
+    .hu{
+        width: 100%;
+        height: 290px;
+        background-color:rgb(24, 5, 69);
+        position: relative;
+        bottom:590px;
+     margin-right: auto;
+     margin-left: auto;
+    }
+    .hu1{
+        font: 1em sans-serif;
+        color: aliceblue;
+        font-size: 30px;
+        position: relative;
+        left: 80px;
+        top: 30px;
+    }
+    .hu2{
+        font: 1em sans-serif;
+        color: aliceblue;
+        line-height: 30px;
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+    .hu3{
+    background-color: rgb(0, 200, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    /* cursor: pointer; */
+    font-size: 1rem;
+    /* transition: background-color 0.3s; */
+    position: relative;
+    left: 80px;
+    top: 20px;
+}
+.hloo{
+    width: 100%;
+        height: 390px;
+        background-color: rgb(24, 5, 69);
+        position: relative;
+        top:190px;
+     margin-right: auto;
+     margin-left: auto;
+     display: flex;
+     justify-content: center;
+}
+.hloo1{
+    /* width: 100%;
+        height: 290px; */
+        /* background-color: blue; */
+        position: relative;
+        top:90px;
+        right: 80px;
+     margin-right: auto;
+     margin-left: auto;
+}
+.hloo2{
+    position: relative;
+    top:120px ;
+    right: 160px;
+}
+.hloo12{
+    font: 1em sans-serif;
+        color: aliceblue;
+        font-size: 30px;
+        position: relative;
+        bottom: 20px;
+        /* top: 30px; */
+        right: 80px;
+}
+.hloo123{
+    font: 1em sans-serif;
+        color: aliceblue;
+        line-height: 30px;
+        position: relative;
+        right: 130px;
+        bottom: 20px;
+}
+.hloo1234{
+    position: relative;
+        left: 50px;
+        bottom: 20px;
+}
+.hloo12345{
+    position: relative;
+        left: 400px;
+        bottom: 370px;
+        font-size: 40px;
+        font-weight: bold;
+
+}
+.h99{
+    position: relative;
+        left: 50px;
+        bottom: 130px;
+        font-size: 15px;
+}
+.h88{
+    position: relative;
+        left: 400px;
+        bottom: 470px;
+        font-size: 15px;
+}
+.loadmore{
+           width: 100px;
+            height: 30px;
+            /* padding: 25px; */
+            background-color:blue;
+            color:white;
+            font-size: 15px;
+            /* border: solid blue; */
+            /* border-right-color: blue; */
+            border-radius: 5px;
+            position: relative;
+            /* right: 550px; */
+            text-align: center; 
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 10px;
+            top: 90px; 
+            left: 670px;
+            /* border: 5px; */
+}
+
+        .loadmore:hover{
+            /* transition: .5s linear;
+            scale: 1.1; */
+            background-color: rgb(0, 234, 255);
+            color: aliceblue; 
+           
+        }
+
+.follow{
+    width: 100px;
+            height: 30px;
+            /* padding: 25px; */
+            background-color:rgb(255, 0, 195);
+            color:white;
+            font-size: 15px;
+            /* border: solid blue; */
+            /* border-right-color: blue; */
+            border-radius: 5px;
+            position: relative;
+            /* right: 550px; */
+            text-align: center; 
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 10px;
+            top: 90px; 
+            left: 680px;
+}
+.follow:hover{
+        /* transition: .5s linear;
+            scale: 1.1; */
+            background-color: rgb(255, 0, 60);
+            color: aliceblue; 
+}
+.hu3:hover{
+    /* background-color: blue; */
+          transition: .5s linear;
+            scale: 1.1;
+            background-color: white;
+            color:  rgb(55, 0, 255); 
+            /* border: solid  rgb(0, 247, 255); */
+}
+.c{
+    width: 100%;
+    height: 700px;
+    background-image: url("/images/thumb-1920-389342.jpg");
+}
+.c1{
+    background-color: rgb(151, 145, 137);
+    width: 100%;
+    height: 530px;
+    opacity: .5;
+    position: relative;
+    top: 190px;
+}
+.overlay {
+    text-align: center;
+    color: #fff;
+    position: relative;
+    bottom: 80px;
+}
+.overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.overlay button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.overlay button:hover{
+    background: blue;
+    color:white;
+    border: none;
+}
+footer {
+    background: rgb(26, 3, 60);
+    color: #ffffff;
+    padding: 20px 10px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-section h2, .footer-section h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+.course{
+    position: relative;
+    left: 40px;
+}
+.footer-section p, .footer-section ul {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #55c2ff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* .social-icons a {
+    color: #ffffff;
+    margin-right: 10px;
+    font-size: 20px;
+} */
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #555;
+    font-size: 16px;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+ 
+}
+
+.footer-bottom a:hover {
+    text-decoration: none;
+    color: rgb(0, 162, 255);
+}
+.aii{
+    position: relative;
+    left: 50px;
+    bottom: 35px;
+}
+.aii:hover{
+    color: #55c2ff;
+    text-decoration: none;
+}
+.ai{
+    position: relative;
+    right: 80px; 
+}
+.ai:hover{
+    color: #55c2ff;
+    text-decoration: none;
+}
+/* .wavy{
+   position: absolute;
+   bottom: -1px;
+   left: 0;
+   width: 100%;
+   height: 80px;
+   background:blue;
+   border-radius: 100% 50% 0;
+   
+} */
+    
+         @media (max-width:600px){
+            @media screen and (max-width: 768px) {
+    body {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .nav {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .wallpaper img {
+        height: 300px; /* Adjust image height for mobile */
+    }
+
+    .wallwrite {
+        font-size: 10px;
+        bottom: 300px;
+        text-align: center;
+        position: relative;
+        right: 90px;
+        
+    }
+
+    .wallwrite2 {
+        font-size: 10px;
+        text-align: center;
+        position: relative;
+        right: 50px;
+        top: 40px;
+    }
+
+    .iso {
+        bottom: 300px;
+        left: 0;
+        text-align: center;
+    }
+
+    .iso img {
+        width: 20%;
+        height: auto;
+        position: relative;
+        right: 90px;
+        top: 30px;
+    }
+
+     .youbutt {
+        width: 150px;
+        margin: 10px 0;
+        right: 10px;
+        left: auto;
+        position: relative;
+        height: 50px;
+        top:70px
+    }
+    .youbut{
+        width: 150px;
+        margin: 10px 0;
+        right: 30px;
+        left: auto;
+        position: relative;
+        height: 50px;
+    }
+    .youtube {
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    .you1{
+        position: relative;
+         width: 300px;
+         height: 200px;
+         bottom: 200px;
+    /* padding-top: 56.25%;  */
+    /* overflow: hidden; */
+  
+    left: 7px;
+    }
+    .you2{
+        position: relative;
+         width: 300px;
+         height: 200px;
+         bottom: 200px;
+         font-size: 15px;
+    }
+    .you3{
+      font-size: 10px;
+       
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .box {
+        width: 90%;
+        margin: 10px auto;
+        bottom: 0;
+        left: 0;
+    }
+
+    .phi {
+        height: auto;
+        text-align: center;
+        bottom: 0;
+        padding: 20px;
+    }
+    .phi1{
+        position: static;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .phi2{
+        position: static;
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    .hi {
+        height: auto;
+        bottom: 0;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .hi1 {
+        position: static;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .hi2 {
+        position: static;
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    .wphi{
+        height: auto;
+        bottom: 0;
+        padding: 20px 10px;
+        text-align: center; 
+    }
+    .wphi1{
+        position: static;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .wphi2{
+        position: static;
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    .but{
+        position: relative;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 60px;
+        max-width: 300px;
+        height: 20px;
+        font-size: 14px;
+        right: 130px;
+        bottom: 20px;
+    }
+    .butt{
+        position: relative;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 50px;
+        max-width: 300px;
+        height: 20px;
+        font-size: 14px;
+        right: 60px;
+        top: 20px;
+    }
+    .bu {
+        position: static;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 80%;
+        max-width: 300px;
+        height: 10px;
+        font-size: 14px;
+    }
+
+    .hiii {
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px;
+        position: static;
+        margin-top: 20px;
+    }
+
+    .hii {
+        width: 90%;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    .hiii img {
+        width: 80px; 
+        height: auto;
+        margin-bottom: 10px;
+        position: static;
+    }
+
+    .react {
+        position: static;
+        font-size: 16px;
+        color: #333;
+    }
+    
+    .pbu{
+        position: static;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 80%;
+        max-width: 300px;
+        height: 10px;
+        font-size: 14px;
+    }
+      .wpbu {
+        position: static;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 80%;
+        max-width: 300px;
+        height: 10px;
+        font-size: 14px;
+    }
+
+    .phiii {
+        flex-direction: column;
+        gap: 20px;
+        bottom: 0;
+    }
+
+    .phii {
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+
+    .con {
+        grid-template-columns: repeat(1, 1fr);
+      
+        height: auto;
+        bottom: 0;
+    }
+
+    .hloo {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .hu{
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+        width: 370px;
+        position: relative;
+        bottom: 10px;
+      
+    }
+    .hu1{
+        font-size: 24px;
+        left: auto;
+        position: relative;
+        right: 70px;
+    }
+    .hu2{
+        font-size: 16px;
+        position: relative;
+        left: auto;
+        right: 50px;
+    }
+    .hu3{
+        position: relative;
+        display: block;
+        /* margin: 0 auto 20px auto; */
+        width: 150px;
+        max-width: 300px;
+        height: 50px;
+        font-size: 14px;
+        left: 30px;
+        top: 10px;
+    }
+    .hloo12 {
+        font-size: 24px;
+        left: 50px;
+        position: relative;
+        bottom: 80px;
+    }
+
+    .hloo123 {
+        font-size: 14px;
+        position: relative;
+        left: 50px;
+        bottom: 80px;
+    }
+    .hloo1234{
+        font-size: 14px;
+        position: relative;
+        left: 50px;
+        bottom: 50px; 
+    }
+    .h88 {
+        position: relative;
+        left: 0;
+        font-size: 20px;
+       bottom:250px ;
+    }
+    .hloo12345{
+        position: relative;
+        left: 10px;
+        font-size: 30px;
+        bottom: 210px; 
+    }
+    .hloo2{
+        position: relative;
+        left: 10px;
+        font-size: 30px;
+        top: 1px; 
+    }
+    .h99 {
+        position: relative;
+        left: 0;
+        font-size: 20px;
+       
+        bottom: 150px; 
+    }
+    .loadmore, .follow {
+        position: static;
+        margin: 10px auto;
+    }
+
+    .c1 {
+        height: 400px;
+        top: 0;
+    }
+
+    .overlay {
+        bottom: 0;
+    }
+}
+
+            /* body{
+                background-color: aquamarine;
+            }
+            .nav{
+                display:none;
+            }
+            .header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px;
+            color: white;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+} */
+
+       
+         }
+         
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">   
+            <p><img src="/images/Camerin_folks-removebg-preview.png"></p> </div>
+            <div class="nav">
+                <p><a href="" style="color: white; font-size: 20px;">Home</a></p>
+                <p><a href="" style="color:white; font-size: 20px;">About Us</a></p>
+                <p><a href="" style="color: white; font-size: 20px;">Courses </a></p>
+                <p><a href="" style="color: white; font-size: 20px;">Internship</a></p>
+                <p><a href="" style="color:white; font-size: 20px;">Placement</a></p>
+                <p><a href="" style="color: white; font-size: 20px;">Testmonials</a></p>
+                <p><a href="" style="color: white; font-size: 20px;">Gallery</a></p>
+                <p><a href="" style="color: white; font-size: 20px;">Blog</a></p>
+                <p><a href="" style="color: white; font-size: 20px;">Contact Us</a></p>
+        
+        </div>
+        <!-- <button class="menu">menu</button> -->
+    </div>
+    
+    <div class="wallpaper">
+       
+<img src="/images/WhatsApp Image 2024-12-14 at 11.08.15 AM.jpeg">
+<div class="wallwrite">
+    <p><pre>        Best Institute with 100% Placement
+
+        Assistance in Kerala</pre>
+    
+            <pre class="wallwrite2">            We Provide 100% Placement to 
+            the Students , who have completed 
+            the course with us or our
+            associated Companies</pre>
+    </p>
+            </div>
+            <div class="iso">
+                <img src="/images/download.png">
+                <button class="but">facebook</button><button class="butt">youtube</button>
+            </div>
+            
+    </div>
+    <div class="youtube">
+        <div class="you1"><iframe width="580" height="415" src="https://www.youtube.com/embed/P2t9lz71-Eg?si=34IUZzc01G2EBZ_7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <div class="you2">
+            <p><pre>About Camerinfolks Institute</pre>
+                <pre class="you3">            Camerinfolks is a renowned tech training institute where you’ll
+            uncover the tools to transform your passion into a promising
+            career. With a wide range of specialty courses, we offer 
+            comprehensive training programs in trending technologies and
+            digital marketing.</pre>
+                <pre class="you3">            Be it Python, Java, or machine learning, we have seasoned
+            professionals to guide you. Take a step closer to your
+            dreams with Camerinfolks.</pre></p>
+            <button class="youbut">Read More</button><button class="youbutt">Join Camerin Now</button>
+        </div>
+    </div>
+    
+    <div class="container">
+       
+        <div class="box">
+            <h2><img src="/images/download (1).png"></h2>
+            <h3 class="p2">Camerin Innovate</h3>
+            <p class="p1">
+                Camerin Innovate, a subsidiary of the Camerin Group and based in Carnival Infopark, 
+                specializes in providing healthcare information technology solutions and related services. 
+                The company offers a comprehensive range of solutions and services in this field.
+            </p>
+            <button class="p3">Read More</button>
+        </div>
+
+      
+        <div class="box">
+            <h2 class="h22"><img src="/images/Camerin_folks.png"></h2>
+            <h3>Camerin Folks</h3>
+            <p>
+                Camerin Folks, a subsidiary of the Camerin Group, is an ISO (9001:2015) Certified leading 
+                edutech company headquartered in Cochin. It is recognized as the most innovative IT Training 
+                and Recruitment company. Camerin Folks provides classroom and online training services 
+                across India and various other countries.
+            </p>
+            <button>Read More</button>
+        </div>
+
+        <div class="box">
+            <h2 class="h33"><img src="/images/download (2).png"></h2>
+            <h3>Camerin Spark</h3>
+            <p>
+                Camerin Spark, a subsidiary of the Camerin Group, specializes in edutech offerings focused 
+                on administrative courses. Recognized as a leader in innovative training and skill development, 
+                Camerin Spark delivers both classroom and online training services throughout India and 
+                various other countries.
+            </p>
+            <button>Read More</button>
+        </div>
+    </div>
+    <div class="hi">
+        <h2 class="hi1">What will you learn From Us !</h2>
+        <p class="hi2">Our mission is to provide 100% placements to students those who enroll for our specialized courses.</p>
+        <button class="bu"></button>
+    </div>
+    <div class="hiii">
+        <div class="hii"><img src="/images/React.webp" ><p class="react">react & node js</p></div>
+        <div class="hii"><img src="/images/php.png"><p class="react">php</p></div>
+        <div class="hii"><img src="/images/digital.png" ><p class="react">Digital Marketing</p></div>
+        <div class="hii"><img src="/images/java.png"  ><p class="react">Java</p></div>
+        <div class="hii"><img src="/images/flutter.png" ><p class="react">Flutter</p></div>
+        <div class="hii"><img src="/images/python.png" ><p class="react">Python</p></div>
+    </div>
+    <div class="hu">
+        <p><pre class="hu1">Featured Courses</pre>
+          <pre class="hu2">            Hand-picked Instructor and expertly 
+            crafted courses,designed for the 
+            modern students and entrepreneur. </pre></p>
+            <button class="hu3">Browse all courses</button>
+             </div>
+             <!-- <button class="wavy"></button> -->
+             <div class="phi">
+                <h2 class="phi1">Why you should join us ?</h2>
+                <p class="phi2">Choose Camerinfolks to fuel your ambitions.</p>
+                <button class="pbu"></button>
+            </div>
+            <div class="phiii">
+                <div class="phii"><img src="/images/webinar.png" ><p ><pre style="font-size: 20px;">  Relevant Courses</pre>
+                    <pre style="font-size: 15px;"> We provide diverse,up-to-date 
+ courses to match the current
+ industry needs.</pre>
+                </p></div>
+                <div class="phii"><img src="/images/classroom.png"><p><pre style="font-size: 20px;">  Experienced Faculty</pre>
+                    <pre style="font-size: 15px;"> Learn from industry experts 
+ with years of experience in
+ their respective fields.
+
+                        </pre> </p></div>
+                <div class="phii"><img src="/images/practical.png" ><p><pre style="font-size: 20px;">  Practical Learning</pre>
+                    <pre style="font-size: 15px;"> We focus on hands-on
+ learning to tackle real-world
+ challenges.
+                       
+                                               </pre></p></div>
+                <div class="phii"><img src="/images/career-path.png"  ><p><pre style="font-size: 20px;"> Career Support</pre>
+                    <pre style="font-size: 15px;">  We offer personalized 
+ guidance to land your dream 
+ job. 
+                </p></div>
+                 </div>
+                 <div class="wphi">
+                    <h2 class="wphi1">Check Our Instagram Feed !</h2>
+                    <p class="wphi2">Choose Camerinfolks to fuel your ambitions.
+
+                    </p>
+                    <button class="wpbu"></button>
+                </div>
+                <div class="con">
+                    <div class="div1"><img src="/images/pic1.jpg" style="height: 300px;" width="290px"></div>
+                    <div class="div1"><img src="/images/pic2.png" style="height: 300px;" width="290px"></div>
+                    <div class="div1"><img src="/images/pic3.png" style="height: 300px;" width="290px"></div>
+                    <div class="div1"><img src="/images/pic4.png" style="height: 300px;" width="290px"></div>
+                    <div class="div1"><img src="/images/pic5.png" style="height: 300px;" width="290px"></div>
+                    <div class="div1"><img src="/images/pic6.png" style="height: 300px;" width="290px"></div>
+                    <div class="div1"><img src="/images/pic7.png" style="height: 300px;" width="290px"></div>
+                    <div class="div1"><img src="/images/pic8.png" style="height: 300px;" width="290px"></div>
+                    <div class="div1"><img src="/images/pic9.png" style="height: 300px;" width="290px"></div>
+                    <div class="div1"><img src="/images/pic10.jpg" style="height: 300px;" width="290px"></div>
+                    <div class="div1"><img src="/images/pic11.png" style="height: 300px;" width="290px"></div>
+                    <div class="div1"><img src="/images/pic12.png" style="height: 300px;" width="290px"></div>
+                    <div class="div1"><img src="/images/pic13.png" style="height: 300px;" width="290px"></div>
+                    <div class="div1"><img src="/images/pic14.png" style="height: 300px;" width="290px"></div>
+                    <div class="div1"><img src="/images/pic15.png" style="height: 300px;" width="290px"></div>
+                    <div class="div1"><img src="/images/pic16.png" style="height: 300px;" width="290px"></div>
+                    <div class="div1"><img src="/images/pic17.png" style="height: 300px;" width="290px"></div>
+                    <div class="div1"><img src="/images/pic18.png" style="height: 300px;" width="290px"></div>
+                    <div class="div1"><img src="/images/pic19.png" style="height: 300px;" width="290px"></div>
+                    <div class="div1"><img src="/images/pic20.png" style="height: 300px;" width="290px"></div>
+                     </div>
+      <button class="loadmore">Load More</button><button class="follow">Follow on Instagram</button>
+      <div class="hloo">
+        <div class="hloo1">
+            <p><pre class="hloo12">Check what people say about</pre>
+                <pre class="hloo123">            Kerala’s Fast Growing Software Institute <span style="color: aqua;"> CAMERINFOLKS </span> 
+               <pre class="hloo1234" style="font-size: 40px; font-weight: bold;"> 9/10   </pre>
+             <pre class="h99">  9/10 users 
+  reported better learning
+  outcomes.</pre> 
+              <pre class="hloo12345"> 85%</pre>
+                <pre class="h88">  85% of students
+  see their course through
+  to completion. </pre></p>
+        </div>
+        <div class="hloo2">
+            <img src="/images/review.png" height="200px" width="400px">
+        </div>
+      </div>
+      <div class="c">
+<div class="c1">
+   
+</div>
+<div class="overlay">
+    <h1>Find The Right Learning Path For You</h1>
+    <p>Match your goals to our programs, explore your options and map out your path to success.</p>
+    <button>Get Started Now</button>
+</div>
+      </div>
+      <div class="foot"></div>
+      <footer>
+        <div class="footer-container">
+          
+            <div class="footer-section about">
+                <h2><img src="/images/Camerin_folks-removebg-preview.png" height="50px" width="300px"></h2>
+                <p>
+                    Camerinfoks Pvt. Ltd. is the most innovative Software Training Institute in Kochi, delivering offline 
+                    and online training across India and other countries. Camerinfoks Pvt. Ltd. is another subsidiary of Camerin Group Pvt. Ltd. 
+                    We offer a wide range of trending software courses and provide real-time live projects and hands-on practical sessions along with training.
+                </p>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+         
+            <div class="footer-section courses">
+                <h3 class="course">  COURSES</h3>
+                <ul>
+                    <li>Java Training</li>
+                    <li>Python Training</li>
+                    <li>Software Testing</li>
+                    <li>DS & ML Training</li>
+                    <li>React & Node JS Training</li>
+                    <li>Flutter Training</li>
+                    <li>Digital Marketing</li>
+                    <li>MERN Stack Training</li>
+                    <li>FAQs</li>
+                </ul>
+            </div>
+       
+            <div class="footer-section contact">
+                <h3>CAMERIN INNOVATE</h3>
+                <p><img> +91 9037467978</p>
+                <p><img> <a href="mailto:info@camerininnovate.com">info@camerininnovate.com</a></p>
+                <p><img> 2nd Floor, Carnival Infopark Phase I,<br> Infopark Campus, Kochi, Kakkanad, Kerala 682030</p>
+                
+                <h3>CAMERINFOLKS PVT. LTD</h3>
+                <p><img> +91 7736421092</p>
+                <p><img> <a href="mailto:career@camerinfolks.com">career@camerinfolks.com</a></p>
+                <p><img> 5th Floor, Issac and Geethas Image Centre,<br> Seaport - Airport Rd, Kochi, Kakkanad, Kerala - 682037</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>
+                <p class="ai">Terms & Conditions</p>  <p class="aii">Privacy Policy</p>
+            </div>
+            <p>© 2024 Camerinfoks. All Right Reserved. Designed & Developed By Camerinfoks Pvt. Ltd</p>
+          
+        </div>
+      </footer>
+</body>
+</html>
